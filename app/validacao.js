@@ -2,7 +2,7 @@ function verificaSeOChutePossuiUmValorValido(chute) {
     const numero = +chute
 
     if (chuteForInvalido(numero)) {
-        elementoChute.innerHTML +='<div>Valor inválido</div>'
+        elementoChute.innerHTML +='<div class="texto__paragrafo">Valor inválido</div>'
         return
     }
 
@@ -14,19 +14,22 @@ function verificaSeOChutePossuiUmValorValido(chute) {
 
     if (numero === numeroSecreto) {
         document.body.innerHTML = `
+        <div class="container__jogar">
         <h2>Você acertou!</h2>
         <h3>O número secreto era ${numeroSecreto}</h3>
 
+        
         <button id="jogar_novamente" class="btn_jogar">Jogar Novamente</button>
+        <div/>
         `
     } else if (numero > numeroSecreto) {
         elementoChute.innerHTML += `
-        <div>O número secreto é menor 
+        <div class="texto__paragrafo">O número secreto é menor 
         <i class="fa-solid fa-arrow-down"></i></div>
         `
     } else { 
         elementoChute.innerHTML += `
-        <div>O número secreto é maior 
+        <div class="texto__paragrafo">O número secreto é maior 
         <i class="fa-solid fa-arrow-up"></i></div>
         `
 

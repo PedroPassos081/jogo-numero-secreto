@@ -21,18 +21,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Acerte o número secreto</h1>
+    <div class="container">
+      <div class="container__conteudo">
+          <div class="container__informacoes">
+              <div class="container__texto">
+                  <h1>Adivinhe o <span class="container__texto-azul">numero secreto</span></h1>
+                  <p class="texto__paragrafo">
+                    O número secreto está entre <span id="menor_valor">0</span> e
+                    <span id="maior_valor">100</span>
+                  </p>
+              </div>
+              <div id="chute" class="mensagem">
+                <!--  <div>Você disse:</div>
+                <span class="box">20</span>
+                <div>O número secreto é maior <i class="fa-solid fa-arrow-up"></i></div> --> 
+              </div>
+          </div>
+          <img src="./images/ia.png" alt="Uma pessoa olhando para a esquerda" class="container__imagem-pessoa" />
+      </div>
+  </div>
 
-    <h3>
-      O número secreto está entre <span id="menor_valor">0</span> e
-      <span id="maior_valor">100</span>
-    </h3>
-
-    <div id="chute" class="mensagem">
-      <!--  <div>Você disse:</div>
-      <span class="box">20</span>
-      <div>O número secreto é maior <i class="fa-solid fa-arrow-up"></i></div> --> 
-    </div>
     <script src="/app/sortearNumero.js"></script>
     <script src="/app/reconhecimentoDeVoz.js"></script>
     <script src="/app/validacao.js"></script>
