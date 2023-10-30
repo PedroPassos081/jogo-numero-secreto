@@ -13,9 +13,6 @@ body {
   justify-content: center;
 }
 
-h1 {
-font-size: 4em;
-}
 
 h2  {
   font-size: 4em;
@@ -58,6 +55,7 @@ h3 {
   justify-content: center;
   color: #f1f1f1;
   align-items: center;
+  cursor: pointer;
 }
 * {
   box-sizing: border-box;
@@ -158,7 +156,8 @@ h1 {
 }
 
 .texto__paragrafo {
-  font-size: 32px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 30px;
   font-weight: 400;
 }
 
